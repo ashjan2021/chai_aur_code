@@ -1,0 +1,16 @@
+{
+  "name": "chai_aur_code",
+  "version": "1.0.0",
+  "description": "a backend start project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "javascript",
+    "backend",
+    "chai"
+  ],
+  "author": "Ashish Jangid",
+  "license": "ISC"
+}
