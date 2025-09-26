@@ -4,7 +4,7 @@
   "description": "a backend start project",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript",
@@ -12,5 +12,8 @@
     "chai"
   ],
   "author": "Ashish Jangid",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
