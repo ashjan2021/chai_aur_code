@@ -1,6 +1,6 @@
-const express = require('express');
-const cookieParser = require('cookie-parser');
-const cors = require('cors');
+import express from 'express';
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 const app = express();
 
@@ -14,4 +14,4 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static('public'));
 app.use(cookieParser())
 
-module.exports = app;   
+export {app};
