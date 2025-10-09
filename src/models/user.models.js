@@ -45,7 +45,7 @@ const userSchema = mongoose.Schema({
     refreshToken: {
         type: String,
     }
-}, { timeStamps: true }) // for created At and Updated At.
+}, { timestamps: true }) // for created At and Updated At.
 
 
 //  mongoose hooks - pre - when save event happens encrypt the password before it is being saved.
@@ -67,7 +67,7 @@ userSchema.methods.generateAccessToken = function(){
             _id: this._id,
             email: this.email,
             username: this.username,
-            fullName: this.fullName 
+            fullName: this.fullName
         },
         process.env.ACCESS_TOKEN_SECRET,
         {
